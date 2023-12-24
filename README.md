@@ -1,8 +1,6 @@
 # chatgpt API
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![GitHub Issues](https://img.shields.io/github/issues/your-username/your-repo.svg)](https://github.com/your-username/your-repo/issues)
-[![GitHub Stars](https://img.shields.io/github/stars/your-username/your-repo.svg)](https://github.com/your-username/your-repo/stargazers)
+
 
 A SIMPLE NODEJS APP WITH COMMAND LINE INTERFACE ,WITH DOCKER RUNNING ENVIRONEMENT
 
