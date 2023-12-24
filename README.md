@@ -39,7 +39,7 @@ Follow these steps to set up and run the project:
     ├── .env
     ├── Dockerfile
     ```
-##usage:
+## Usage:
 1. **Start the Docker engine:**
 
     - Open PowerShell as an administrator.
