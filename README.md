@@ -1,13 +1,12 @@
 # chatgpt API
 
-
-
-A SIMPLE NODEJS APP WITH COMMAND LINE INTERFACE ,WITH DOCKER RUNNING ENVIRONEMENT
+A SIMPLE NODEJS APP WITH COMMAND LINE INTERFACE, WITH DOCKER RUNNING ENVIRONMENT
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Managing API Keys](#managing-api-keys)
 
 ## Installation
 
@@ -37,7 +36,25 @@ Follow these steps to set up and run the project:
     ├── .env
     ├── Dockerfile
     ```
+
+## Managing API Keys:
+
+When working with this application, you'll need an API key from OpenAI. Follow these steps to manage your OpenAI API key:
+
+1. **Get your OpenAI API key:**
+   - Sign up for an account on the OpenAI platform.
+   - Obtain your API key from the OpenAI dashboard.
+
+2. **Insert your API key in the `.env` file:**
+   - In your local project directory, open the `.env` file.
+   - Add the following line, replacing `your_openai_api_key_here` with your actual OpenAI API key:
+     ```
+     OPEN_API_KEY=your_openai_api_key_here
+     ```
+
+
 ## Usage:
+
 1. **Start the Docker engine:**
 
     - Open PowerShell as an administrator.
@@ -61,9 +78,7 @@ Follow these steps to set up and run the project:
     ```
 
     This command mounts the `data` directory from your host machine to the container.
-5.**insert your question and press enter:**
+
+5. **Insert your question and press enter.**
+
 6. **Check the updated file `question_answer.csv` in your host machine after each run!**
-
-
-
-
