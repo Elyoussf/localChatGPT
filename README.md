@@ -1,31 +1,71 @@
-####The description of the project's architecture
-First of all the Project contains a folder named src that contains the file index.js which holds the main logic implemented here with nodejs.In addition there is a project named data that contains the file named question_answer that 
-which is a csv file that wrapps a JSON content each object represents one single conversation. Then, there is some package*.json that comes accross once the npm is called to create the project setup it contains an indentity to the project.
-Furthermore, we have .env file that holds API_KEY generated from openai platform it's a sensitive data so that we consider it as an environement variable which represents an abstraction to it for security purposes!   
-And we have Dockerfile file that holds a bunch of instructions that define how our app will be run during the execution in an isolated environement! 
+# Your Project Name
 
-###All these instructions are for windows users:
-######For user-related details:
-#Prerequisites: Docker containerizer installed 
-               Powershell windows run as admin
-               vs Code 
-               ensuring the structure of the projects as follow : 
-                     ASEDS/
-                            |- src/
-                            |    |- index.js
-                            |
-                            |- data/
-                            |    |- question_answer.csv
-                            |
-                            |- package.json
-                            |- .env
-                            |- Dockerfile
-              have an account in openai, extract the API_KEY and put in the file .env  with an environement variable named OPEN_AI_KEY 
- #How to use it?:
-After doing all the prerequisites steps , you're now able test our application:
-1- open Powershell as admin go to ASEDS run this command :  docker build -t projet .  this create a docker image for our project with the name "project" 
-wait till it finishs all the required installation then run this  : docker run -it -v ${pwd}/data:/usr/src/app/data projet  
-this actually is doing a lot off tings. for instance the -it ooption is here to alert the terminal that we'll have an interactive execution so a flow of input output here so it's for sychnronization purpose;
--v is used to create a docker volume for this container the next argument with the form A:B means that the volume within the container which has the  stateless property (all data is being erased and lost once the contaoined is stopped or removed) is mapped to a laction oin the host sysfiles to ensure the persistence of data ! 
-If we do this perfectly we'll have an interactive conversation with chatgpt API which is actually being stored in the folder data that we invoked in the architecture above ! 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![GitHub Issues](https://img.shields.io/github/issues/your-username/your-repo.svg)](https://github.com/your-username/your-repo/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/your-username/your-repo.svg)](https://github.com/your-username/your-repo/stargazers)
+
+A SIMPLE NODEJS APP WITH COMMAND LINE INTERFACE ? WITH DOCKER RUNNING ENVIRONEMENT
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Acknowledgments](#acknowledgments)
+## Installation
+
+Follow these steps to set up and run the project:
+
+1. **Clone the GitHub repository:**
+
+    ```bash
+    git clone https://github.com/your-username/ASEDS.git
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```bash
+    cd ASEDS
+    ```
+
+3. **Ensure that the directory structure is as follows:**
+
+    ```
+    ASEDS/
+    ├── src/
+    │   └── index.js
+    ├── data/
+    │   └── question_answer.csv
+    ├── package.json
+    ├── .env
+    ├── Dockerfile
+    ```
+
+4. **Start the Docker engine:**
+
+    - Open PowerShell as an administrator.
+
+5. **Navigate to the project folder:**
+
+    ```bash
+    cd path\to\ASEDS
+    ```
+
+6. **Build the Docker image:**
+
+    ```bash
+    docker build -t project .
+    ```
+
+7. **Run the Docker container:**
+
+    ```bash
+    docker run -it -v ${pwd}/data:/usr/src/app/data project
+    ```
+
+    This command mounts the `data` directory from your host machine to the container.
+
+8. **Check the updated file `question_answer.csv` in your host machine after each run!**
+
+
+
 
