@@ -10,7 +10,7 @@ A SIMPLE NODEJS APP WITH COMMAND LINE INTERFACE ,WITH DOCKER RUNNING ENVIRONEMEN
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Acknowledgments](#acknowledgments)
+
 ## Installation
 
 Follow these steps to set up and run the project:
@@ -39,32 +39,32 @@ Follow these steps to set up and run the project:
     ├── .env
     ├── Dockerfile
     ```
-
-4. **Start the Docker engine:**
+##usage:
+1. **Start the Docker engine:**
 
     - Open PowerShell as an administrator.
 
-5. **Navigate to the project folder:**
+2. **Navigate to the project folder:**
 
     ```bash
     cd path\to\ASEDS
     ```
 
-6. **Build the Docker image:**
+3. **Build the Docker image:**
 
     ```bash
     docker build -t project .
     ```
 
-7. **Run the Docker container:**
+4. **Run the Docker container:**
 
     ```bash
     docker run -it -v ${pwd}/data:/usr/src/app/data project
     ```
 
     This command mounts the `data` directory from your host machine to the container.
-
-8. **Check the updated file `question_answer.csv` in your host machine after each run!**
+5.**insert your question and press enter:**
+6. **Check the updated file `question_answer.csv` in your host machine after each run!**
 
 
 
